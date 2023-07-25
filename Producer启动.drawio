@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-07-22T08:44:59.442Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.79" version="21.5.2" etag="sqv-wILc8UPI9VUyTVqY" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-25T12:07:54.414Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.79" etag="VG1RmrNiJIaQJmW588lR" version="21.5.2" type="github">
   <diagram name="第 1 页" id="tKDuQXxd49rCpgEXO0wI">
-    <mxGraphModel>
+    <mxGraphModel dx="961" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-1" value="DefaultMQProducer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-4" value="DefaultMQProducerImpl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-6" value="MQClientInstance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="262.5" width="520" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-8" value="RemotingClient&lt;br&gt;(NettyRemotingClient)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="290" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-7" value="MQClientAPIImpl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="290" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-9" value="PullMessageService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="460" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-10" value="RebalanceService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="560" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="0H_PtwtiYWlNnHFjb7OY-11" value="RebalanceService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="660" width="180" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
