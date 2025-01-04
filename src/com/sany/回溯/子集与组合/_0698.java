@@ -1,4 +1,4 @@
-package com.sany.回溯.子集划分问题;
+package com.sany.回溯.子集与组合;
 
 import java.util.*;
 

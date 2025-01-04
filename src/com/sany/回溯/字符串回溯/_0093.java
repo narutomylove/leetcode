@@ -1,12 +1,15 @@
 package com.sany.回溯.字符串回溯;
 
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 复原IP地址
  */
-public class _093 {
+public class _0093 {
 
     public List<String> restoreIpAddresses(String s) {
         List<String> result = new ArrayList<>();
@@ -50,5 +53,48 @@ public class _093 {
         list.add(num3);
         backTrack(chars, begin + 3, len + 1, list, result);
         list.remove(list.size() - 1);
+    }
+
+    /**
+     * 2刷此题写出的结果
+     */
+    public List<String> restoreIpAddresses1(String s) {
+        List<String> resultList = new ArrayList<>();
+        if (s == null || s.length() < 4 || s.length() > 12) {
+            return resultList;
+        }
+        Deque<String> deque = new LinkedList<>();
+        backTrack1(s, deque, resultList);
+        return resultList;
+    }
+
+    private void backTrack1(String s, Deque<String> deque, List<String> resultList) {
+        if (deque.size() == 4) {
+            if (s.length() < 1) {
+                resultList.add(deque.stream().collect(Collectors.joining(".")));
+            }
+            return;
+        }
+        if (s.length() == 0) {
+            return;
+        }
+        int end = 4;
+        int firstNum = Character.getNumericValue(s.charAt(0));
+        if (firstNum == 0) {
+            end = 2;
+        }
+        for (int i = 1; i < end; i++) {
+            if (s.length() < i) {
+                continue;
+            }
+            String subString = s.substring(0, i);
+            if (Integer.valueOf(subString) > 255) {
+                continue;
+            }
+            deque.add(subString);
+            String leftString = s.substring(i, s.length());
+            backTrack1(leftString, deque, resultList);
+            deque.pollLast();
+        }
     }
 }

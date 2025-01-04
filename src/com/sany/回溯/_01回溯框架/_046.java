@@ -1,4 +1,4 @@
-package com.sany.回溯.回溯经典;
+package com.sany.回溯._01回溯框架;
 
 import java.util.*;
 
@@ -10,7 +10,7 @@ import java.util.*;
 public class _046 {
 
     /**
-     * 基础版全排列
+     * 46.基础版全排列，此题作为回溯框架学习
      */
     public List<List<Integer>> permute(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -41,7 +41,8 @@ public class _046 {
     }
 
     /**
-     * 第60题，其实没啥意思。和46题一模一样
+     * 第60题，其实没啥意思。和46题一模一样（这样的解法太简单，但是效率很低）
+     * 增加一些剪枝的话，这题就变成hard了。
      */
     public String getPermutation(int n, int k) {
         boolean[] flag = new boolean[n + 1];
