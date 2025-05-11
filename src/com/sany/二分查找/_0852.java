@@ -13,24 +13,7 @@ package com.sany.二分查找;
 public class _0852 {
 
     public static int peakIndexInMountainArray(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-        int mid = 0;
-        while (left < right) {
-            mid = left + ((right - left) >> 1);
-            if (arr[left] > arr[mid] && arr[mid] >= arr[right]) {
-                right = mid - 1;
-                continue;
-            }
-            if (arr[left] <= arr[mid] && arr[mid] < arr[right]) {
-                left = mid + 1;
-                continue;
-            }
-            left = arr[left] == arr[mid] ? mid ?;
-            left = left + ((mid - left) >> 1);
-            right = mid + ((right - mid) >> 1);
-        }
-        return left;
+        return 0;
     }
 
     public static void main(String[] args) {
