@@ -1,8 +1,8 @@
-package com.fintopia.滑动窗口.定长滑动窗口;
+package com.fintopia.滑动窗口.定长滑动窗口._1base;
 
 import java.util.Arrays;
 
-public class _06_2090 {
+public class _04_2090 {
 
   public int[] getAverages(int[] nums, int k) {
     int[] result = new int[nums.length];

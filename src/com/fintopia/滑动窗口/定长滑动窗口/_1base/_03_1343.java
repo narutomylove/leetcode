@@ -1,14 +1,9 @@
-package com.fintopia.滑动窗口.定长滑动窗口;
-
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+package com.fintopia.滑动窗口.定长滑动窗口._1base;
 
 /**
  * 这题我拿到手的第一想法，这不是个回溯问题吗？怎么会归类到滑动窗口了。
  */
-public class _05_1343 {
+public class _03_1343 {
 
   // 回溯写法
   public int numOfSubarrays(int[] arr, int k, int threshold) {

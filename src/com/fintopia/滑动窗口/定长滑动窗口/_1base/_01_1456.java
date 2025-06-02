@@ -1,4 +1,4 @@
-package com.fintopia.滑动窗口.定长滑动窗口;
+package com.fintopia.滑动窗口.定长滑动窗口._1base;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package com.fintopia.滑动窗口.定长滑动窗口;
+package com.fintopia.滑动窗口.定长滑动窗口._1base;
 
-public class _04_0643 {
+public class _02_0643 {
 
   public double findMaxAverage(int[] nums, int k) {
     int maxSum = 0;
